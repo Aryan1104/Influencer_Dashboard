@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: none;
+    background-image: url(./19923.jpg);
+    color: #fff;
+    display: grid;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+ul 
+{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    padding: 1px 0 0 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+}
+.logo
+{
+    padding: 20px;
+    padding-right: 680px;
+    font-family: 'Poppins', sans-serif;
+    color: #f06d06;
+    font-weight: 900;
+    font-size:medium;
+    text-decoration: underline;
+}
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 75px;
+
+
+}
+
+.detail
+{
+    border-radius: 1.5%;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+
+.chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(from -90deg,
+            #f06d06 0% 30%,
+            #4caf50 0% 100%);
+    margin: 20px auto;
+}
+
+.main
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.left
+{
+    
+    display: grid;
+    padding: 1px;
+    margin: 2px;
+    
+    height: 100vh;
+    width: 30vw;
+    border-radius: 1.5%;
+}
+
+.detail
+{
+    display: flex;
+    background-color: rgb(33, 32, 32);
+    border: 0.001px solid rgb(150, 148, 194);
+}
+.DDD
+{
+    height: 150px;
+}
+
+
+.channel
+{
+    border-radius: 1.5%;
+    border: 0.001px solid rgb(150, 148, 194);
+    background-color: rgb(33, 32, 32);
+    padding: 20px;
+    padding-top: 29px;
+    margin-top: 30px;
+    display: grid;
+
+    width: 91%;
+    height: 300px;
+    
+    
+    justify-content: space-between;
+    font-size: small;
+    font-family: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.bar
+{
+   display: flex; 
+   justify-content: space-between;
+   
+   
+}
+
+.bar li
+{
+    padding-right: 90px;
+}
+
+/* ======================================================== */
+.right
+{
+    background-color: transparent;
+    padding: 1px;
+    /* margin: 4px; */
+    height: 100px;
+    width: 90%;
+    border-radius: 1.5%;
+
+}
+
+.graph
+{
+    padding: 5px;
+    display: grid;
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+
+.nav2 ul a
+{
+    padding: 26px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.nav2 ul button
+{
+   
+    background-color: rgb(33, 32, 32) ;
+}
+/* =============================================================== */
+.fashion
+{
+    display: flex;
+    padding:0px 20px 0px 20px ;
+    justify-content: space-between;
+    background-color: rgb(33, 32, 32);
+    border: 0.001px solid rgb(150, 148, 194);   
+}
+button
+{
+    padding: 3px 18px;
+    border-radius: 8px;
+    align-items: center;
+    color:rgb(33, 32, 32) ;
+    background-color: rgb(242, 50, 50);
+    font-weight: 750;
+
+}
+
+
+.ads
+{
+    display: grid;
+
+    margin: 5px;
+    border-radius: 2%;
+    border: 0.001px solid rgb(150, 148, 194);
+}
+
+.price
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 0.001px solid rgb(150, 148, 194);
+}
+
+/* ======================================================== */
+
+/* Custom styles for the graph container */
+.container{
+    margin: 1px;
+    padding: 20px;
+    border: 0.001px solid rgb(150, 148, 194);
+    border-radius: 10px;
+    background-color: rgb(33, 32, 32);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+    height: 450px;
+    width: 1000px;
+
+
+
+}
+
+.male
+{
+    display: flex;
+    margin: 3px;
+    padding: 1px;
+    background: transparent;
+    justify-content: space-around;
+}
+.geo
+{
+    display: flex;
+    margin: 3px;
+    padding: 1px;
+    background: transparent;
+    justify-content: space-around;
+    border: 0.001px solid rgb(150, 148, 194);
+}
+
+.audience
+{
+    background-color:rgb(33, 32, 32) ;
+    border-radius: 2%;
+    height: 300px;
+    width: 90%;
+    padding-left: 20px;
+    margin: 10px;
+    border: 0.001px solid rgb(150, 148, 194);
+    
+}
+
+h1{
+    color: #fff;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-weight: 900;
+    text-decoration: underline;
+}
+

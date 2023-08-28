@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Dashboard</title>
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- --------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <!-- fontawsome link -->
+
+    <script src="https://kit.fontawesome.com/e3e211d8b5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Views', 'Likes'],
+                ['2004', 600, 100],
+                ['2005', 1170, 760],
+                ['2006', 660, 920],
+                ['2007', 1630, 1800]
+            ]);
+
+            var options = {
+                title: 'Subscribers Growth +9.1k',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!-- donut chart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Male', 29],
+
+                ['Female', 71]
+            ]);
+
+            var options = {
+                title: 'Gender',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!-- donut 2 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Language', 'Speakers (in millions)'],
+
+                ['Good', 75], ['Massfollower', 11], ['Suspicious', 9], ['Influencers', 5]
+            ]);
+
+            var options = {
+                title: 'Quality',
+                legend: 'none',
+                pieSliceText: 'label',
+                slices: {
+                    4: { offset: 0.2 },
+                    12: { offset: 0.3 },
+                    14: { offset: 0.4 },
+                    15: { offset: 0.5 },
+                },
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!-- bar chart -->
+    
+
+    <!-- geochart -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Users'],
+          ['India', 800],
+          ['United States', 600],
+          ['Myanmar', 400],
+          ['pakistan', 500],
+          ['China', 600],
+          ['South Africa', 670]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+
+    <header class="header">
+        <a href="#" class="logo">Influencer Dashboard</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1; color:orange;" class="active" >Home</a>
+            <a href="https://www.bing.com/images/search?view=detailV2&ccid=0py5%2f5Fx&id=B8D768ADC172B3AA73793EE39EA64E775948DA68&thid=OIP.0py5_5FxywwhkOPicDEVCwHaJ4&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2fa1%2fd0%2fc1%2fa1d0c19c1c36721d3e11f36f7e28ec70.jpg&exph=1440&expw=1080&q=virat+kohli+model+images&simid=608003125821778061&FORM=IRPRST&ck=F7F900578FD0B040BC43A71531F92978&selectedIndex=0&ajaxhist=0&ajaxserp=0" style="--i:3;">Gallery</a>
+            <a href="https://www.instagram.com/__aryan__1104/" style="--i:4;">Accounts</a>
+            <a href="https://www.linkedin.com/in/aryan-mishra-ba0560229/" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <section class="left">  
+
+            <div class="DDD">
+                <div class="detail">
+                    <div class="img">
+                        <img src="./IMG_20230818_012835_985.jpg" border-radius="30%" height="110px" width="110px"
+                            alt="">
+                    </div>
+                    <div class="address">
+                        <h1>Aryan Mishra</h1>
+                        <p>
+                            Influencer,Coder,Developer
+                        </p>
+                        <h3><a href=""></a></h3><br>
+                        <h4><b>Bhopal,India</b></h4>
+                    </div>
+                </div>
+
+                <div class="fashion">
+                    <button>#Design</button>
+                    <button>#Art</button>
+                    <button>#Development</button>
+                    <button>#UI/UX</button>
+                </div>
+            </div>
+
+            <div class="channel">
+                <h2 class="navbar" style="color: orange;">Channel Statistics</h2>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Subscribers</li>
+                    <li>250k</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Views</li>
+                    <li>32 Millionsk</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Videos</li>
+                    <li>38</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Likes</li>
+                    <li>315.8k</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Last Video</li>
+                    <li>July 17, 2023</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Average Likes</li>
+                    <li>8.3k</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Last month video</li>
+                    <li>6</li>
+                </div>
+                <div class="bar">
+                    <li><i class="fa-solid fa-user"></i>Average comments</li>
+                    <li>3.5k</li>
+                </div>
+            </div>
+
+            <div class="ads" style="height: 300px; width: 100%; background-color:rgb(33, 32, 32);">
+
+                    <a href="https://aryan1104.github.io/Aryan_Portfolio_Website/aryan.html"><img src="./About-Me-600x359.webp" height="200px" weight="300px" alt=""></a>
+
+                    
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="graph">
+                <div class="nav2">
+                    <ul>
+                        <button><a href="" >Youtube</a></button>
+                        <button><a href="" style="color: rgb(150, 148, 148);">Instagram</a></button>
+                        <button><a href="" style="color: rgb(150, 148, 148);">Twitter</a></button>
+                        <button><a href="" style="color: rgb(150, 148, 148);">+</a></button>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div id="curve_chart" style="width: 1000px; height: 450px; background-color:transparent;"></div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="./script.js"></script>
+            </div>
+
+            <div class="audience">
+                <h2 style="padding:3px;">Audience</h2>
+                <i class="fa-light fa-chart-pie-simple"></i>
+
+                <div class="male">
+                    <div id="donutchart" style="width: 300px; height: 200px; margin:2px; border-radius:3%;"></div>
+
+                    <div id="regions_div" style="width: 300px; height: 200px;"></div>
+
+
+                </div>
+                
+            </div>
+
+
+
+
+
+        </section>
+    </section>
+</body>
+
+</html>
